@@ -1,1 +1,2 @@
-# collection-management
+# hospitalManagement
+hospitalManagement 

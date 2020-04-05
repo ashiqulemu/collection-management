@@ -1,0 +1,88 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SHSTP 403</title>
+    <link rel="stylesheet" href="{% static "css/app.css" %}">
+    <script src="{% static "js/app.js" %}" defer></script>
+    {% csrf_token %}
+    <style>
+        .error-guard {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 1170px;
+            margin: 8% auto;
+            background: aliceblue;
+            min-height: 500px;
+            border: 1px solid #808080 0 d;
+        }
+
+        .error-guard .items {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 26px;
+            text-align: center;
+        }
+
+        .error-guard .items:first-child img {
+            min-width: 307px;
+        }
+
+        .error-guard .items:last-child {
+            flex: 2;
+        }
+
+        .error-guard .items:last-child div:nth-child(1) {
+            font-size: 9em;
+            color: #4a5d74;
+            font-weight: 800;
+        }
+
+        .error-guard .items:last-child div:nth-child(2) {
+            font-size: 22px;
+            color: #f5b05a;
+            text-transform: uppercase;
+            font-weight: bolder;
+        }
+
+        .error-guard .items:last-child div:nth-child(3) {
+            font-size: 16px;
+            color: #4a5d74;
+            text-transform: capitalize;
+            line-height: 36px;
+            font-weight: bold;
+        }
+
+        .error-guard .items:last-child div:nth-child(4) a {
+            font-size: 12px;
+            color: #37689a;
+        }
+
+    </style>
+</head>
+<body>
+<div id="app">
+    <div class="error-guard">
+        <div class="items">
+            <img src="/static/images/403.svg" alt="" width="100%">
+        </div>
+        <div class="items">
+            <div>403</div>
+            <div>aha! you see! you can be wrong!</div>
+            <div>Access Denied!</div>
+            <div><a href="/">Go back to the home page </a></div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

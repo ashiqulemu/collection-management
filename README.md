@@ -1,2 +1,0 @@
-# hospitalManagement
-hospitalManagement 

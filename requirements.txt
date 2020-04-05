@@ -1,4 +1,17 @@
-django
-django-webpack-loader
-pytz
-django-livereload-server
+/*! *****************************************************************************
+Copyright (c) Microsoft Corporation. All rights reserved. 
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use
+this file exce
+
+
+Django==2.2.6
+django-enum-choices==2.1.1
+django-enumfield==1.5
+django-reset-migrations==0.3.1
+django-webpack-loader==0.6.0
+djangorestframework==3.10.3
+future==0.18.2
+mysqlclient==1.4.4
+pytz==2019.3
+pyzk==0.9
+sqlparse==0.3.0

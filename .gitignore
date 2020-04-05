@@ -1,13 +1,9 @@
+/venv
+/.idea
+/frontend/webpack-stats.json
+**/migrations/**
+!**/migrations
+!**/migrations/__init__.py
 
-/diagnosis/migrations/
-/doctor/migrations/
-/lab/migrations/
-/patient/migrations/
-/static/css/
-/static/js/
-/tests/migrations/
-/.idea/
-/venv/
-/node_modules/
-/db.sqlite3
-/company/migrations/
+/static/dist
+
